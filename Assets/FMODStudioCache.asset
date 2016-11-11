@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 114000013744134984}
+  - {fileID: 114000014035024628}
+  EditorEvents:
+  - {fileID: 114000014136000460}
+  MasterBankRef: {fileID: 114000014035024628}
+  StringsBankRef: {fileID: 114000013744134984}
+  stringsBankWriteTime: 636144731482186063
+  cacheVersion: 2
+--- !u!114 &114000013744134984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FMOD Project\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636144731482186063
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 676
+  Exists: 1
+--- !u!114 &114000014035024628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: G:\Pucc_Space_Shooter\FMOD Project\Build\Desktop\Master Bank.bank
+  lastModified: 636144731482176073
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 12224
+  Exists: 1
+--- !u!114 &114000014136000460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Laser_Shoot
+  guid: 4f0c845c0cc77c48b4a980ee3fa777bd
+  Banks:
+  - {fileID: 114000014035024628}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
