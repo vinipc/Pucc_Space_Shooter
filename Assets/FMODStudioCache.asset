@@ -16,10 +16,98 @@ MonoBehaviour:
   - {fileID: 114000014035024628}
   EditorEvents:
   - {fileID: 114000014136000460}
+  - {fileID: 114000013733541832}
+  - {fileID: 114000012139464362}
+  - {fileID: 114000010689943290}
+  - {fileID: 114000010814714744}
   MasterBankRef: {fileID: 114000014035024628}
   StringsBankRef: {fileID: 114000013744134984}
-  stringsBankWriteTime: 636144731482186063
+  stringsBankWriteTime: 636144759669699441
   cacheVersion: 2
+--- !u!114 &114000010689943290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Exeplosion_Player
+  guid: abf766b7f037a34b9ab9c013d4db1644
+  Banks:
+  - {fileID: 114000014035024628}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+--- !u!114 &114000010814714744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Laser_Shoot_Enemy
+  guid: c897368d355a684abe63f1314d4ee541
+  Banks:
+  - {fileID: 114000014035024628}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+--- !u!114 &114000012139464362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Pickup
+  guid: 92687db55008fc4b8a09484790913dc1
+  Banks:
+  - {fileID: 114000014035024628}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+--- !u!114 &114000013733541832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Explosion_Enemy
+  guid: 0cc85ba1787a1f45a7122b0c92e42766
+  Banks:
+  - {fileID: 114000014035024628}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
 --- !u!114 &114000013744134984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32,11 +120,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD Project\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636144731482186063
+  lastModified: 636144759669699441
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 676
+    Value: 876
   Exists: 1
 --- !u!114 &114000014035024628
 MonoBehaviour:
@@ -50,11 +138,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: G:\Pucc_Space_Shooter\FMOD Project\Build\Desktop\Master Bank.bank
-  lastModified: 636144731482176073
+  lastModified: 636144759669694438
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 12224
+    Value: 31040
   Exists: 1
 --- !u!114 &114000014136000460
 MonoBehaviour:

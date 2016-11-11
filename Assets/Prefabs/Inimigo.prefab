@@ -137,7 +137,7 @@ MonoBehaviour:
   prefabBala: {fileID: 11425272, guid: c3a44fe2001d99c48a360d8440ff8073, type: 2}
   velocidade: -5
   intervaloTiro: 0.2
-  shotFX: event:/Laser_Shoot
+  shotFX: event:/Laser_Shoot_Enemy
 --- !u!114 &11453054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeOut: 15
+  explosionFx: event:/Explosion_Enemy
   tipo: 1
   infos:
   - {fileID: 11400000, guid: 9912b5168ac18c94c93ad6a41eae130b, type: 2}

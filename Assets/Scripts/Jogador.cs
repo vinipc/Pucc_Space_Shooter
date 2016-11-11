@@ -7,6 +7,9 @@ public class Jogador : MonoBehaviour
 	private float _input;
 	public float aceleracao;
 	public float maxVelocidade;
+
+	[FMODUnity.EventRef]
+	public string explosionFx;
 	
 	void Start()
 	{
@@ -35,9 +38,23 @@ public class Jogador : MonoBehaviour
 	{
 		if (outro.CompareTag("Bala") || outro.CompareTag("NaveInimigo"))
 		{
+			PlaySfx(explosionFx);
 			Destroy(gameObject);
 			Destroy(outro.gameObject);
 			SpaceShooter.AtivarGameOver();
+		}
+	}
+
+	private void PlaySfx(string fx)
+	{
+		Vector2 viewportPosition = Camera.main.WorldToViewportPoint(transform.position);
+		if (!string.IsNullOrEmpty(fx) &&
+			0f <= viewportPosition.x && viewportPosition.x <= 1f &&
+			0f <= viewportPosition.y && viewportPosition.y <= 1f)
+		{
+			FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(fx);
+			e.start();
+			e.release();
 		}
 	}
 }

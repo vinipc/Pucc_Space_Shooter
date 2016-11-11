@@ -29,12 +29,20 @@ public class Arma : MonoBehaviour
 			bala.GetComponent<Rigidbody2D>().velocity = new Vector2(0, velocidade);
 			tempoUltimoTiro = intervaloTiro;
 
-			if (!string.IsNullOrEmpty(shotFX))
-			{
-				FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(shotFX);
-				e.start();
-				e.release();
-			}
+			PlaySfx(shotFX);
+		}
+	}
+
+	private void PlaySfx(string fx)
+	{
+		Vector2 viewportPosition = Camera.main.WorldToViewportPoint(transform.position);
+		if (!string.IsNullOrEmpty(fx) &&
+			0f <= viewportPosition.x && viewportPosition.x <= 1f &&
+			0f <= viewportPosition.y && viewportPosition.y <= 1f)
+		{
+			FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(fx);
+			e.start();
+			e.release();
 		}
 	}
 }

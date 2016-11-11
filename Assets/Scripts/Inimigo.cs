@@ -6,6 +6,9 @@ public class Inimigo : MonoBehaviour
 	private Rigidbody2D _rb;
 	private SpriteRenderer _rend;
 	public float timeOut;
+
+	[FMODUnity.EventRef]
+	public string explosionFx;
 	
 	[Range(0, 1)]
 	public int
@@ -32,9 +35,23 @@ public class Inimigo : MonoBehaviour
 	{
 		if (outro.CompareTag("Bala"))
 		{
+			PlaySfx(explosionFx);
 			Destroy(outro.gameObject);
 			Destroy(gameObject);
 			SpaceShooter.CriarPowerUp(transform.position);
+		}
+	}
+
+	private void PlaySfx(string fx)
+	{
+		Vector2 viewportPosition = Camera.main.WorldToViewportPoint(transform.position);
+		if (!string.IsNullOrEmpty(fx) &&
+			0f <= viewportPosition.x && viewportPosition.x <= 1f &&
+			0f <= viewportPosition.y && viewportPosition.y <= 1f)
+		{
+			FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(fx);
+			e.start();
+			e.release();
 		}
 	}
 }
