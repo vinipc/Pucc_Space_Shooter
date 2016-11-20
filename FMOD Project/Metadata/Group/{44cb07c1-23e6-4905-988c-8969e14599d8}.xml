@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.08.00">
     <object class="MixerGroup" id="{44cb07c1-23e6-4905-988c-8969e14599d8}">
+        <property name="volume">
+            <value>-3.79999995</value>
+        </property>
         <property name="name">
             <value>Soundtrack</value>
         </property>
@@ -27,13 +30,13 @@
             <value>-26.5</value>
         </property>
         <property name="attackTime">
-            <value>2</value>
+            <value>0.949999928</value>
         </property>
         <property name="releaseTime">
             <value>75</value>
         </property>
-        <property name="sidechainEnabled">
-            <value>true</value>
+        <property name="linkChannels">
+            <value>false</value>
         </property>
     </object>
 </objects>

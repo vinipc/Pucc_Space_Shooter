@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.08.00">
     <object class="MixerGroup" id="{c94db5c3-03b2-4e62-aa4f-5bc0d70a4b31}">
-        <property name="volume">
-            <value>-1.39999998</value>
-        </property>
         <property name="name">
             <value>SFx</value>
+        </property>
+        <property name="instanceStealing">
+            <value>3</value>
         </property>
         <relationship name="effectChain">
             <destination>{132cb9cf-d443-45ad-9e4f-a74c60829bf1}</destination>

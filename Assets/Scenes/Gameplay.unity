@@ -291,9 +291,9 @@ MonoBehaviour:
   PlayEvent: 1
   StopEvent: 0
   CollisionTag: 
-  AllowFadeout: 1
+  AllowFadeout: 0
   TriggerOnce: 0
-  Preload: 0
+  Preload: 1
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ListenerNumber: 0
+  ListenerNumber: 8
 --- !u!124 &470164495
 Behaviour:
   m_ObjectHideFlags: 0
