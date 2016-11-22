@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114000013744134984}
-  - {fileID: 114000014094199294}
+  - {fileID: 114000010046231928}
   EditorEvents:
   - {fileID: 114000014136000460}
   - {fileID: 114000013733541832}
@@ -21,10 +21,28 @@ MonoBehaviour:
   - {fileID: 114000010689943290}
   - {fileID: 114000010814714744}
   - {fileID: 114000013551316364}
-  MasterBankRef: {fileID: 114000014094199294}
+  MasterBankRef: {fileID: 114000010046231928}
   StringsBankRef: {fileID: 114000013744134984}
-  stringsBankWriteTime: 636152757931746994
+  stringsBankWriteTime: 636144805979608758
   cacheVersion: 2
+--- !u!114 &114000010046231928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: G:\Pucc_Space_Shooter\FMOD Project\Build\Desktop\Master Bank.bank
+  lastModified: 636153663277521655
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 272160
+  Exists: 1
 --- !u!114 &114000010156281164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,7 +102,7 @@ MonoBehaviour:
   Path: event:/Exeplosion_Player
   guid: abf766b7f037a34b9ab9c013d4db1644
   Banks:
-  - {fileID: 114000014094199294}
+  - {fileID: 114000010046231928}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -105,7 +123,7 @@ MonoBehaviour:
   Path: event:/Laser_Shoot_Enemy
   guid: c897368d355a684abe63f1314d4ee541
   Banks:
-  - {fileID: 114000014094199294}
+  - {fileID: 114000010046231928}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -113,6 +131,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &114000011041770402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: speed
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114000011380875478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -156,7 +189,7 @@ MonoBehaviour:
   Path: event:/Pickup
   guid: 92687db55008fc4b8a09484790913dc1
   Banks:
-  - {fileID: 114000014094199294}
+  - {fileID: 114000010046231928}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -211,12 +244,12 @@ MonoBehaviour:
   Path: event:/Soundtrack
   guid: d61dba876f6319488948e8900137631a
   Banks:
-  - {fileID: 114000014094199294}
+  - {fileID: 114000010046231928}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114000011041770402}
+  - {fileID: 114000011380875478}
   MinDistance: 0
   MaxDistance: 0
 --- !u!114 &114000013733541832
@@ -233,7 +266,7 @@ MonoBehaviour:
   Path: event:/Explosion_Enemy
   guid: 0cc85ba1787a1f45a7122b0c92e42766
   Banks:
-  - {fileID: 114000014094199294}
+  - {fileID: 114000010046231928}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -252,7 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMOD Project\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636152757931746994
+  lastModified: 636144805979608758
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -324,7 +357,7 @@ MonoBehaviour:
   Path: event:/Laser_Shoot
   guid: 4f0c845c0cc77c48b4a980ee3fa777bd
   Banks:
-  - {fileID: 114000014094199294}
+  - {fileID: 114000010046231928}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
