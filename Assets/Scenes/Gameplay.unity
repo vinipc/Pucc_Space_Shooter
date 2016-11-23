@@ -269,6 +269,10 @@ Prefab:
       propertyPath: m_AnchoredPosition.y
       value: -32.0999985
       objectReference: {fileID: 0}
+    - target: {fileID: 6411962, guid: 3bb3c5ed1cb74e34bab3c837eaee2aff, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3bb3c5ed1cb74e34bab3c837eaee2aff, type: 2}
   m_IsPrefabParent: 0
@@ -515,6 +519,7 @@ GameObject:
   - 58: {fileID: 620148580}
   - 114: {fileID: 620148579}
   - 114: {fileID: 620148582}
+  - 114: {fileID: 620148583}
   m_Layer: 8
   m_Name: Jogador
   m_TagString: NaveJogador
@@ -551,6 +556,7 @@ MonoBehaviour:
   aceleracao: 200
   maxVelocidade: 10
   explosionFx: event:/Exeplosion_Player
+  rockHitFx: event:/Efeito bater na pedra
 --- !u!58 &620148580
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -594,6 +600,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tecla: 32
+--- !u!114 &620148583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620148577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/Ambiencia nave
+  PlayEvent: 1
+  StopEvent: 2
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &808532128
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +695,7 @@ GameObject:
   - 61: {fileID: 810932424}
   m_Layer: 0
   m_Name: ParedeInvisivel
-  m_TagString: Untagged
+  m_TagString: Parede
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -785,7 +813,7 @@ GameObject:
   - 61: {fileID: 930049474}
   m_Layer: 0
   m_Name: ParedeInvisivel
-  m_TagString: Untagged
+  m_TagString: Parede
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

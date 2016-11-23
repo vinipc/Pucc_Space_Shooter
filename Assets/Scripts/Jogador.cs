@@ -10,6 +10,9 @@ public class Jogador : MonoBehaviour
 
 	[FMODUnity.EventRef]
 	public string explosionFx;
+
+	[FMODUnity.EventRef]
+	public string rockHitFx;
 	
 	void Start()
 	{
@@ -42,6 +45,14 @@ public class Jogador : MonoBehaviour
 			Destroy(gameObject);
 			Destroy(outro.gameObject);
 			SpaceShooter.AtivarGameOver();
+		}
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.CompareTag("Parede"))
+		{
+			PlaySfx(rockHitFx);
 		}
 	}
 
